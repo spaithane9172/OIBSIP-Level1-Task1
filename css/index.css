@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.slidshow {
+    width: 100%;
+    height: 100vh;
+    animation: slidshow 20s infinite;
+    transition: 5s animation;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    position: fixed;
+    padding: 0;
+    padding-left: 5vw;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2vw;
+    text-shadow: 1px 1px 10px skyblue;
+    font-family: 'Lobster', cursive;
+}
+
+nav h3:hover {
+    text-shadow: 1px 1px 10px blue;
+}
+
+@keyframes slidshow {
+    0% {
+        background: url("../img/lp.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    20% {
+        background: url("../img/lp1.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    40% {
+        background: url("../img/lp2.webp") no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    60% {
+        background: url("../img/lp3.webp") no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    70% {
+        background: url("../img/lp4.webp") no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    100% {
+        background: url("../img/lp5.jpg") no-repeat;
+        background-size: 100vw 100vh;
+    }
+}
+
+.websiteTitle {
+    position: absolute;
+    top: 40vh;
+    left: 10vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    padding: 5vh 2vw;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.websiteTitle h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 5vw;
+}
+
+.websiteTitle p {
+    font-size: 2vw;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 10vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10vh;
+}
+
+.col {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+    padding: 5vh 2vw;
+    box-shadow: 1px 1px 5px black;
+    transition: 0.5s;
+}
+
+.col:hover {
+    transform: scale(1.01, 1.01);
+}
+.mr{
+    margin-right: 5vw;
+}
+.col img {
+    width: 30vw;
+    height: 40vh;
+}
+.offerSlidshow{
+    width: 90vw;
+    height: 60vh;
+    margin-left: 8vw;
+    margin-bottom: 10vh;
+    animation: offerslidshow 20s infinite;
+}
+
+@keyframes offerslidshow {
+    0% {
+        background: url("../img/of1.jpg") no-repeat;
+        background-size: 90% 60vh;
+    }
+
+    20% {
+        background: url("../img/of2.png") no-repeat;
+        background-size: 90% 60vh;
+    }
+
+    40% {
+        background: url("../img/of3.png") no-repeat;
+        background-size: 90% 60vh;
+    }
+
+    60% {
+        background: url("../img/of4.jpg") no-repeat;
+        background-size: 90% 60vh;
+    }
+
+    70% {
+        background: url("../img/of5.jpg") no-repeat;
+        background-size: 90% 60vh;
+    }
+
+    100% {
+        background: url("../img/of6.jpg") no-repeat;
+        background-size: 90% 60vh;
+    }
+}
+@media (max-width:768px) and (min-width:576px){
+    nav {
+        font-size: 4vw;
+    }
+    .websiteTitle {
+        width: 60vw;
+    }
+    
+    .websiteTitle h2 {
+        font-size: 6vw;
+    }
+    
+    .websiteTitle p {
+        font-size: 2.5vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    .col img {
+        width: 30vw;
+        height: 30vh;
+    }
+    
+}
+@media (max-width:576px){
+    nav {
+        font-size: 4vw;
+    }
+    .websiteTitle {
+        width: 70vw;
+    }
+    
+    .websiteTitle h2 {
+        font-size: 6vw;
+    }
+    
+    .websiteTitle p {
+        font-size: 3vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    .mr{
+        margin-right: 0;
+    }
+    .row {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .col {
+        width: 80vw;
+        margin-bottom: 5vh;
+    }
+    .col img {
+        width: 60vw;
+        height: 30vh;
+    }
+    
+}
